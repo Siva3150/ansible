@@ -1,6 +1,10 @@
 #Task level Varaiables
 - name: Varaiables from play level
   hosts: localhost
+  Vars: 
+    Name: "Siva prasad"
+    Course: "DevOps"
+    Trainer: "Siva sir"
   tasks:
   - name: check variables
     ansible.builtin.debug:
