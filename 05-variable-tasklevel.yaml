@@ -1,6 +1,6 @@
 # Task level Varaibles
 - name: play level varaibles
-  host: localhost
+  hosts: localhost
   vars: 
     Course: "DevOps"
     Trainer: "Sivakumar reddy"
