@@ -1,0 +1,38 @@
+# checking Data types
+- name: Checking Dara types
+  hosts: localhost
+  vars:
+    NAME: siva
+    Skills:
+    - DevOps
+    - git
+    - shell script
+    - Ansible
+    Experience:
+      DevOps: 2 years
+      Aws: 1 year
+      Docker: 1 year
+    Trainer: true
+  tasks:
+  - name: print key value pairs
+    ansible.builtin.debug:
+      msg: "name: {{NAME}}" 
+
+  - name: print list
+    ansible.builtin.debug:
+      msg: "Skills: {{Skills}}"
+  
+  - name: print map
+    ansible.builtin.debug:
+      msg: "Experience: {{Experience}}"
+
+  - name: print boolean
+    ansible.builtin.debug:
+      msg: "is he Trainer: {{Trainer}}"
+
+    
+      
+    
+
+     
+
