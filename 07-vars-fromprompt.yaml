@@ -1,0 +1,13 @@
+# Variables from prompt
+- name: Playbook for values taken from prompt
+  hosts: localhost
+  vars_prompt:
+  - name: USERNAME
+    prompt: please enter your username
+    private: false #it will show what you enter in command line
+  - name: PASSWORD
+    prompt: please enter your password
+    private: true # it will doesnot show what you enter in command line
+  tasks: 
+  ansible.builtin.debug:
+    msg: "Username from prompt is:{{USERNAME}}, and password from prompt is:{{PASSWORD}}"
