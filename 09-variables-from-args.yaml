@@ -1,5 +1,5 @@
 - name: variables from PLAY level
-  hosts: 3.84.192.186 
+  hosts: localhost
   tasks:
   - name: check variables
     ansible.builtin.debug:
