@@ -1,0 +1,13 @@
+vim web.aws_ec2.yaml
+ ansible-inventory -i web.aws_ec2.yaml --list
+ ansible --version
+ sudo yum list | grep pip
+ sudo yum install python3.11-pip.noarch -y
+ pip3.11 install boto3 botocore
+ vim web.aws_ec2.yaml
+ ansible-inventory -i web.aws_ec2.yaml --list
+ vim web.aws_ec2.yaml
+ ansible-inventory -i web.aws_ec2.yaml --list
+ ansible aws_ec2 -i web.aws_ec2.yaml -e ansible_username=centos -e ansible_password=DevOps321 -m ping
+ vim web.aws_ec2.yaml
+ history
